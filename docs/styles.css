@@ -82,3 +82,5 @@ dialog .ribbon{width:100%;padding:.95em 20% .95em 4%;font-size:16px}
 .about-foreground{z-index:2}
 .photo-arches .arch:nth-child(2) img{transform:translateY(-8%) scale(2.05);transform-origin:50% 0;object-position:50% 0}
 @media(max-width:760px){.hero-copy>.ribbon{width:88%;font-size:12px}.calc-action>.ribbon{width:72%;min-width:0;padding:.95em 13% .95em 3%;font-size:16px}.calc-action{gap:12px}.about-copy>.ribbon{left:12%;width:76%;height:48px;padding:0 13% 0 3%;font-size:13px}.portfolio-section>.ribbon{width:95%;padding:1em 16% 1em 3%;font-size:13px}.categories>button{padding:15px 10px 20px;font-size:11px}.offers{gap:10px}.offers button{padding:20px 10px}.offers strong{font-size:30px}.offers span{font-size:10px}}
+
+.categories img[src*="gingerbread-ticket"]{filter:none}
