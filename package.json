@@ -4,6 +4,6 @@
   "private": true,
   "description": "Новогодние поздравления, шоу и мастер-классы — предварительная главная страница",
   "scripts": {
-    "check": "node --check dist/app.js && node --check dist/programs.js"
+    "check": "node --check dist/app.js && node --check dist/programs.js && node --check dist/catalog.js"
   }
 }
