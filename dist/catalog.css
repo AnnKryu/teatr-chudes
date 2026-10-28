@@ -83,3 +83,8 @@
 }
 @media(max-width:370px){.catalog-content{width:88%}.catalog-grid{grid-template-columns:1fr;max-width:250px;margin:auto}.catalog-card h2{font-size:25px}.catalog-meta{font-size:12px}.catalog-card .catalog-details{font-size:13px}.catalog-heading h1{font-size:42px}}
 @media(prefers-reduced-motion:reduce){.catalog-card{animation:none}.catalog-photo img,.catalog-card,.catalog-tabs button{transition:none}.catalog-card:hover{transform:none}}
+
+/* Keep the longest programme title on two balanced lines. */
+.catalog-stage[data-category=animation] .catalog-card:nth-child(4) h2{font-size:clamp(15px,1.5vw,27px);line-height:.95}
+@media(max-width:760px){.catalog-stage[data-category=animation] .catalog-card:nth-child(4) h2{font-size:clamp(15px,3.2vw,23px)}}
+@media(max-width:370px){.catalog-stage[data-category=animation] .catalog-card:nth-child(4) h2{font-size:22px}}
