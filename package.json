@@ -1,0 +1,9 @@
+{
+  "name": "teatr-chudes",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Новогодние поздравления, шоу и мастер-классы — предварительная главная страница",
+  "scripts": {
+    "check": "node --check dist/app.js && node --check dist/programs.js"
+  }
+}
