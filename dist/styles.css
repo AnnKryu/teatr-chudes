@@ -84,3 +84,20 @@ dialog .ribbon{width:100%;padding:.95em 20% .95em 4%;font-size:16px}
 @media(max-width:760px){.hero-copy>.ribbon{width:88%;font-size:12px}.calc-action>.ribbon{width:72%;min-width:0;padding:.95em 13% .95em 3%;font-size:16px}.calc-action{gap:12px}.about-copy>.ribbon{left:12%;width:76%;height:48px;padding:0 13% 0 3%;font-size:13px}.portfolio-section>.ribbon{width:95%;padding:1em 16% 1em 3%;font-size:13px}.categories>button{padding:15px 10px 20px;font-size:11px}.offers{gap:10px}.offers button{padding:20px 10px}.offers strong{font-size:30px}.offers span{font-size:10px}}
 
 .categories img[src*="gingerbread-ticket"]{filter:none}
+
+/* Restore category cards and refine only the selected ticket buttons. */
+.categories>button{background:var(--wine);color:var(--gold);border-radius:16px;padding:10px 8px 14px;filter:none}
+.categories>button:hover{background:var(--red);filter:none}
+.categories img{filter:none}
+.hero-copy>.ribbon{width:58%;padding:.85em 2.8em .85em 1em;font-size:clamp(12px,1.35vw,24px);white-space:nowrap}
+.about-copy>.ribbon{left:14%;width:27%;height:8.5%;padding:0 2.8em 0 1em;background-image:url('assets/ticket-button-red.svg');color:var(--gold);font-size:clamp(13px,1.45vw,26px);white-space:nowrap}
+.offers{color:var(--gold)}
+.offers button{background-image:url('assets/ticket-card-red.svg')}
+.portfolio-section>.ribbon{width:38%;padding:.85em 2.8em .85em 1em;font-size:clamp(13px,1.4vw,25px);white-space:nowrap}
+@media(max-width:760px){.categories>button{padding:10px 8px 14px;font-size:12px}.hero-copy>.ribbon{width:80%;font-size:12px}.about-copy>.ribbon{left:17%;width:66%;height:44px;font-size:13px}.portfolio-section>.ribbon{width:85%;font-size:12px}}
+
+/* Gentle photo hover, while keeping a slightly wider Father Frost portrait. */
+.arch img{transition:transform .7s cubic-bezier(.2,.65,.3,1)}
+.photo-arches .arch:nth-child(2) img{transform:translateY(-7%) scale(1.85);transform-origin:50% 0}
+@media(hover:hover) and (pointer:fine){.arch:hover img{transform:scale(1.045)}.photo-arches .arch:nth-child(2):hover img{transform:translateY(-7%) scale(1.93)}}
+@media(prefers-reduced-motion:reduce){.arch img{transition:none}}
