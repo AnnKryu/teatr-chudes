@@ -117,3 +117,9 @@
 
 .catalog-card .catalog-details{aspect-ratio:600/143;height:auto;min-height:0}
 .catalog-card .ticket-size{padding:0 3.4em 0 1.3em;height:0}
+
+/* Per-photo framing: show the people lower in the scene and the spice bags. */
+.catalog-photo img[src*="animation-photo-1.webp"]{object-position:50% 60%}
+.catalog-photo img[src*="animation-photo-0.webp"]{object-position:50% 51%}
+.catalog-photo img[src*="animation-photo-3.webp"]{object-position:50% 58%}
+.catalog-photo img[src*="workshop-photo-6.webp"]{object-position:50% 62%}
