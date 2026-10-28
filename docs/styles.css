@@ -149,3 +149,7 @@ dialog .ribbon,dialog #dialog-action{width:max-content;max-width:100%;min-width:
 .ribbon .ticket-size{padding:0 3.4em 0 1.3em;height:0;line-height:1.15}
 .ribbon .ticket-label{inset:0 22% 0 3%}
 .about-copy>.ribbon{height:auto}
+
+/* Consistent select chevrons, centred vertically with a safe right inset. */
+.fields select{appearance:none;-webkit-appearance:none;-moz-appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 10'%3E%3Cpath d='m2 2 6 6 6-6' fill='none' stroke='%23FCF2D6' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;background-size:14px 9px;padding-right:38px}
+@media(max-width:760px){.fields select{background-position:right 10px center;background-size:12px 8px;padding-right:29px}}
