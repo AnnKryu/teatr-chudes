@@ -52,3 +52,13 @@ input[type=range]::-moz-range-thumb{width:40px;height:40px;background:transparen
 .about-copy>p{font-size:clamp(11px,1.65vw,30px);font-weight:700}
 .about-copy>.ribbon{font-size:clamp(13px,2.15vw,39px)}
 @media(max-width:760px){.about-copy>p{font-size:11px}.about-copy>.ribbon{font-size:13px}}
+
+/* Final detail corrections requested from the annotated references. */
+.calc-action>.ribbon{min-width:230px;text-align:center;gap:0}
+.portfolio-section>.ribbon{text-align:center;gap:0}
+.navigation [data-future-page]{cursor:default}
+.arch{border-width:clamp(5px,.45vw,8px);cursor:default}
+.arch img{display:block;transition:none}
+.arch:hover img{transform:none}
+.photo-arches .arch:nth-child(2) img{transform:scale(1.18);object-position:50% 38%}
+@media(max-width:760px){.calc-action>.ribbon{min-width:180px}.arch{border-width:5px}}

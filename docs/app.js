@@ -8,7 +8,7 @@ const texts={
  early:['Раннее бронирование — 10%','Предложение из нашего праздничного анонса: скидка 10% при бронировании до 1 декабря. Применимость к выбранной программе и суммирование с другими предложениями нужно подтвердить перед бронированием.'],
  friend:['Праздник для друзей — 15%','Скидка 15% за одного приведённого друга. Условия получения и применения скидки согласовываются при бронировании.'],
  video:['Живые моменты — скоро','Это предварительная версия сайта. Видео пока не загружено: здесь будет настоящий ролик с праздника.'],
- gallery:['Портфолио пополняется','Здесь появятся фотографии и видео наших поздравлений, шоу и мастер-классов. Две фотографии в разделе выше уже можно открыть крупнее.'],
+ gallery:['Портфолио пополняется','Здесь появятся фотографии и видео наших поздравлений, шоу и мастер-классов. '],
  greeting:['Дед Мороз и Снегурочка','Поздравление под ваш праздник: игры, танцы, вручение подарков и фотографии. Продолжительность, состав артистов и стоимость согласовываем индивидуально.']
 };
 function showDialog(title,body,action=true){$('#dialog-title').textContent=title;$('#dialog-content').replaceChildren();const p=document.createElement('p');p.textContent=body;$('#dialog-content').append(p);$('#dialog-action').hidden=!action;info.showModal()}
@@ -16,7 +16,6 @@ document.querySelectorAll('[data-dialog]').forEach(b=>b.addEventListener('click'
 document.querySelectorAll('.close-dialog').forEach(b=>b.addEventListener('click',()=>b.closest('dialog').close()));
 document.querySelectorAll('dialog').forEach(d=>d.addEventListener('click',e=>{if(e.target===d){const r=d.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)d.close()}}));
 $('#dialog-action').addEventListener('click',()=>{info.close();$('#calculator').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});budget.focus({preventScroll:true})});
-document.querySelectorAll('[data-photo]').forEach(b=>b.addEventListener('click',()=>{const im=$('#large-photo');im.src=`assets/photo-${b.dataset.photo}.webp`;im.alt=b.querySelector('img').alt;$('#photo-dialog').showModal()}));
 
 // Programme categories and budget submission will link to their own pages later.
 $('#budget-form').addEventListener('submit',event=>event.preventDefault());
