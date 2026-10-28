@@ -105,3 +105,12 @@
 .catalog-card .catalog-details{font-size:13px}
 .catalog-stage[data-category=animation] .catalog-card:nth-child(4) h2{font-size:22px}
 }
+
+.catalog-combo{aspect-ratio:2283/781}
+.programs-page .navigation{left:21%;right:21%;gap:clamp(16px,2vw,32px);font-size:clamp(12px,1.35vw,24px)}
+.catalog-card .ticket-size{padding:.75em 2.8em .75em 1em}
+#program-dialog .ribbon{width:max-content;min-width:0}
+@media(max-width:760px){
+.programs-page .navigation{left:50%;right:auto;translate:-50% 0;top:18px;display:grid;grid-template-columns:repeat(2,max-content);gap:2px 14px;font-size:10px;width:max-content;max-width:90%}
+.catalog-combo{aspect-ratio:auto}
+}

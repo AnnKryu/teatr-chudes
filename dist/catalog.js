@@ -11,11 +11,11 @@ function categoryFromURL(){const value=new URL(location.href).searchParams.get('
 function render(category,push=false){
  const c=CATALOG[category];if(!c)return;
  if(push){const u=new URL(location.href);u.searchParams.set('category',category);history.pushState({category},'',u)}
- stage.dataset.category=category;stage.querySelector('.catalog-scenery').src=`assets/catalog/${category}-stage.svg?v=20261029-2`;
+ stage.dataset.category=category;stage.querySelector('.catalog-scenery').src=`assets/catalog/${category}-stage.svg?v=20261029-4`;
  titles.textContent=c.title;subtitle.textContent=c.subtitle;document.title=`${c.title} — программы Театра чудес`;
  panel.setAttribute('aria-labelledby',`tab-${category}`);
  for(const t of tabs){const active=t.dataset.category===category;t.setAttribute('aria-selected',String(active));t.tabIndex=active?0:-1}
- grid.innerHTML=c.programs.map((r,i)=>`<article class="catalog-card" style="--order:${i}"><div class="catalog-photo"><img src="${esc(r.image)}" alt="${esc(r.title)}" width="800" height="1067" ${i>2?'loading="lazy"':''}></div><div class="catalog-card-copy"><h2>${esc(r.title)}</h2><div class="catalog-meta"><span>${clock}${r.minutes} минут</span><img class="meta-star" src="assets/button-star.svg" alt=""><span>${people}${r.artists} ${artist(r.artists)}</span></div><button type="button" class="ribbon gold catalog-details" data-program="${r.id}" aria-label="Подробнее: ${esc(r.title)}">Подробнее</button></div></article>`).join('');
+ grid.innerHTML=c.programs.map((r,i)=>`<article class="catalog-card" style="--order:${i}"><div class="catalog-photo"><img src="${esc(r.image)}" alt="${esc(r.title)}" width="800" height="1067" ${i>2?'loading="lazy"':''}></div><div class="catalog-card-copy"><h2>${esc(r.title)}</h2><div class="catalog-meta"><span>${clock}${r.minutes} минут</span><img class="meta-star" src="assets/button-star.svg" alt=""><span>${people}${r.artists} ${artist(r.artists)}</span></div><button type="button" class="ribbon gold catalog-details" data-program="${r.id}" aria-label="Подробнее: ${esc(r.title)}"><span class="ticket-size" aria-hidden="true">Подробнее</span><span class="ticket-label">Подробнее</span></button></div></article>`).join('');
  document.querySelector('#catalog-status').textContent=`${c.title}. Программ: ${c.programs.length}.`;
 }
 for(const t of tabs){t.addEventListener('click',()=>{if(t.getAttribute('aria-selected')!=='true')render(t.dataset.category,true)});t.addEventListener('keydown',e=>{let i=tabs.indexOf(t);if(e.key==='ArrowRight')i=(i+1)%tabs.length;else if(e.key==='ArrowLeft')i=(i+tabs.length-1)%tabs.length;else if(e.key==='Home')i=0;else if(e.key==='End')i=tabs.length-1;else return;e.preventDefault();tabs[i].focus();render(tabs[i].dataset.category,true)})}
