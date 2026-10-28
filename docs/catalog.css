@@ -88,3 +88,20 @@
 .catalog-stage[data-category=animation] .catalog-card:nth-child(4) h2{font-size:clamp(15px,1.5vw,27px);line-height:.95}
 @media(max-width:760px){.catalog-stage[data-category=animation] .catalog-card:nth-child(4) h2{font-size:clamp(15px,3.2vw,23px)}}
 @media(max-width:370px){.catalog-stage[data-category=animation] .catalog-card:nth-child(4) h2{font-size:22px}}
+
+/* Curtain hems cover the string anchors; long mobile catalogues keep fixed folds. */
+.catalog-stage:before{content:'';position:absolute;top:0;left:0;width:100%;aspect-ratio:2283/720;background:url('assets/catalog/curtain-header.svg') center top/100% 100% no-repeat;z-index:0;pointer-events:none}
+.catalog-heading{position:relative;z-index:1}
+@media(max-width:760px){
+.catalog-scenery{display:none}
+.catalog-stage:before{width:118%;left:-9%}
+.catalog-stage:after{content:'';position:absolute;inset:0;background:url('assets/catalog/mobile-trees.svg') center bottom/118% auto no-repeat,linear-gradient(to right,var(--wine) 0 3%,transparent 3% 97%,var(--wine) 97% 100%);z-index:-2;pointer-events:none}
+.catalog-stage{padding-bottom:18vw}
+}
+@media(max-width:480px){
+.catalog-grid{grid-template-columns:1fr;max-width:300px;margin:auto;row-gap:24px}
+.catalog-card h2{font-size:25px}
+.catalog-meta{font-size:12px}
+.catalog-card .catalog-details{font-size:13px}
+.catalog-stage[data-category=animation] .catalog-card:nth-child(4) h2{font-size:22px}
+}
