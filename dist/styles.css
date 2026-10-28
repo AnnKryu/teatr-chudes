@@ -92,7 +92,7 @@ dialog .ribbon{width:100%;padding:.95em 20% .95em 4%;font-size:16px}
 .hero-copy>.ribbon{width:58%;padding:.85em 2.8em .85em 1em;font-size:clamp(12px,1.35vw,24px);white-space:nowrap}
 .about-copy>.ribbon{left:14%;width:27%;height:8.5%;padding:0 2.8em 0 1em;background-image:url('assets/ticket-button-red.svg?v=5');color:var(--gold);font-size:clamp(13px,1.45vw,26px);white-space:nowrap}
 .offers{color:var(--gold)}
-.offers button{background-image:url('assets/ticket-card-red.svg')}
+.offers button{background-image:url('assets/ticket-card-red.svg?v=11')}
 .portfolio-section>.ribbon{width:38%;padding:.85em 2.8em .85em 1em;font-size:clamp(13px,1.4vw,25px);white-space:nowrap}
 @media(max-width:760px){.categories>a{padding:10px 8px 14px;font-size:12px}.hero-copy>.ribbon{width:80%;font-size:12px}.about-copy>.ribbon{left:17%;width:66%;height:44px;font-size:13px}.portfolio-section>.ribbon{width:85%;font-size:12px}}
 
