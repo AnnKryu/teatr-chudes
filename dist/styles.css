@@ -101,3 +101,9 @@ dialog .ribbon{width:100%;padding:.95em 20% .95em 4%;font-size:16px}
 .photo-arches .arch:nth-child(2) img{transform:translateY(-7%) scale(1.85);transform-origin:50% 0}
 @media(hover:hover) and (pointer:fine){.arch:hover img{transform:scale(1.045)}.photo-arches .arch:nth-child(2):hover img{transform:translateY(-7%) scale(1.93)}}
 @media(prefers-reduced-motion:reduce){.arch img{transition:none}}
+
+/* Centre tear-line notches, matching the original calculator ticket. */
+.ticket-notches{position:absolute;left:48%;top:0;bottom:0;width:26px;transform:translateX(-50%);pointer-events:none;z-index:3}
+.ticket-notches:before,.ticket-notches:after{content:'';position:absolute;left:0;width:26px;height:26px;border-radius:50%;background:var(--wine)}
+.ticket-notches:before{top:-13px}.ticket-notches:after{bottom:-13px}
+@media(max-width:760px){.ticket-notches{display:none}}
