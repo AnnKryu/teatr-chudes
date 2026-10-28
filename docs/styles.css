@@ -62,3 +62,23 @@ input[type=range]::-moz-range-thumb{width:40px;height:40px;background:transparen
 .arch:hover img{transform:none}
 .photo-arches .arch:nth-child(2) img{transform:scale(1.18);object-position:50% 38%}
 @media(max-width:760px){.calc-action>.ribbon{min-width:180px}.arch{border-width:5px}}
+
+/* Selected design 03: theatrical admission tickets. */
+.ribbon,.ribbon.gold{background:transparent url('assets/ticket-button.svg') center/100% 100% no-repeat;color:var(--wine);clip-path:none;border:0;border-radius:0;padding:.9em 21% .9em 5%;gap:0;text-align:center;font-weight:700;line-height:1.15}
+.hero-copy>.ribbon{width:76%;padding:.9em 15% .9em 3%;font-size:clamp(12px,1.5vw,26px)}
+.calc-action>.ribbon{width:32%;min-width:260px;padding:.9em 5% .9em 1%;font-size:clamp(15px,1.65vw,28px)}
+.about-copy>.ribbon{left:11%;width:33%;height:10%;padding:0 5.5% 0 1%;font-size:clamp(13px,1.55vw,28px)}
+.portfolio-section>.ribbon{width:48%;padding:.9em 8% .9em 1.5%;font-size:clamp(14px,1.55vw,26px)}
+dialog .ribbon{width:100%;padding:.95em 20% .95em 4%;font-size:16px}
+.categories>button{background:transparent url('assets/ticket-card.svg') center/100% 100% no-repeat;border-radius:0;color:var(--wine);padding:16px 15px 20px}
+.categories>button:hover{background:transparent url('assets/ticket-card.svg') center/100% 100% no-repeat;filter:brightness(1.03)}
+.categories img{filter:brightness(0) saturate(100%) invert(9%) sepia(49%) saturate(4191%) hue-rotate(333deg) brightness(91%) contrast(101%)}
+.offers{background:none;padding:0;gap:3%;color:var(--wine)}
+.offers:before,.offers:after{display:none}
+.offers button{background:transparent url('assets/ticket-card.svg') center/100% 100% no-repeat;padding:6% 5%;border:0}
+.offers button+button{border:0}
+.offers strong{font-size:clamp(34px,5.2vw,94px)}
+.about-stars{position:absolute;inset:0;width:100%;height:100%;z-index:1;pointer-events:none}
+.about-foreground{z-index:2}
+.photo-arches .arch:nth-child(2) img{transform:translateY(-8%) scale(2.05);transform-origin:50% 0;object-position:50% 0}
+@media(max-width:760px){.hero-copy>.ribbon{width:88%;font-size:12px}.calc-action>.ribbon{width:72%;min-width:0;padding:.95em 13% .95em 3%;font-size:16px}.calc-action{gap:12px}.about-copy>.ribbon{left:12%;width:76%;height:48px;padding:0 13% 0 3%;font-size:13px}.portfolio-section>.ribbon{width:95%;padding:1em 16% 1em 3%;font-size:13px}.categories>button{padding:15px 10px 20px;font-size:11px}.offers{gap:10px}.offers button{padding:20px 10px}.offers strong{font-size:30px}.offers span{font-size:10px}}
