@@ -31,3 +31,5 @@
 @media(max-width:760px){.navigation{left:15%;right:15%;top:20px;gap:14px;font-size:10px;padding:0;background:none;border-radius:0}.portfolio-grid{grid-auto-rows:170px;grid-template-columns:1fr 1fr}.portfolio-grid .media-placeholder:first-child{height:170px}.calc-action{gap:22px}.ornament-star{width:22px;height:30px}.offers{border-radius:0}.portfolio-labels{display:none}}
 @media(max-width:360px){.navigation{left:12%;right:12%;gap:10px;font-size:9px}}
 .placeholder-mark{font-size:0;width:34px;height:44px;background:var(--wine);opacity:.15;clip-path:polygon(50% 0,64% 35%,100% 50%,64% 65%,50% 100%,36% 65%,0 50%,36% 35%)}
+
+.offers:after,.ticket:after{transform:scaleX(-1)}
