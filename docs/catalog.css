@@ -123,12 +123,3 @@
 .catalog-photo img[src*="animation-photo-0.webp"]{object-position:50% 51%}
 .catalog-photo img[src*="animation-photo-3.webp"]{object-position:50% 58%}
 .catalog-photo img[src*="workshop-photo-6.webp"]{object-position:50% 50%}
-
-/* Keep the face and both spice bags together in the product photograph. */
-.catalog-card:has(img[src*="workshop-photo-6.webp"]) .catalog-photo{height:63%}
-.catalog-card:has(img[src*="workshop-photo-6.webp"]) .catalog-card-copy{top:66.5%}
-.catalog-card:has(img[src*="workshop-photo-6.webp"]) h2{font-size:clamp(14px,1.42vw,25px);line-height:.95}
-.catalog-card:has(img[src*="workshop-photo-6.webp"]) .catalog-meta{font-size:clamp(8px,.8vw,14px);margin:1% 0 3%}
-.catalog-card:has(img[src*="workshop-photo-6.webp"]) .catalog-details{width:62%}
-@media(max-width:760px){.catalog-card:has(img[src*="workshop-photo-6.webp"]) h2{font-size:clamp(14px,3.1vw,21px)}}
-@media(max-width:480px){.catalog-card:has(img[src*="workshop-photo-6.webp"]) h2{font-size:21px}.catalog-card:has(img[src*="workshop-photo-6.webp"]) .catalog-meta{font-size:10px}}
