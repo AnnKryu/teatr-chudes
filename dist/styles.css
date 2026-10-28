@@ -64,7 +64,7 @@ input[type=range]::-moz-range-thumb{width:40px;height:40px;background:transparen
 @media(max-width:760px){.calc-action>.ribbon{min-width:180px}.arch{border-width:5px}}
 
 /* Selected design 03: theatrical admission tickets. */
-.ribbon,.ribbon.gold{background:transparent url('assets/ticket-button.svg') center/100% 100% no-repeat;color:var(--wine);clip-path:none;border:0;border-radius:0;padding:.9em 21% .9em 5%;gap:0;text-align:center;font-weight:700;line-height:1.15}
+.ribbon,.ribbon.gold{background:transparent url('assets/ticket-button.svg?v=5') center/100% 100% no-repeat;color:var(--wine);clip-path:none;border:0;border-radius:0;padding:.9em 21% .9em 5%;gap:0;text-align:center;font-weight:700;line-height:1.15}
 .hero-copy>.ribbon{width:76%;padding:.9em 15% .9em 3%;font-size:clamp(12px,1.5vw,26px)}
 .calc-action>.ribbon{width:32%;min-width:260px;padding:.9em 5% .9em 1%;font-size:clamp(15px,1.65vw,28px)}
 .about-copy>.ribbon{left:11%;width:33%;height:10%;padding:0 5.5% 0 1%;font-size:clamp(13px,1.55vw,28px)}
@@ -90,7 +90,7 @@ dialog .ribbon{width:100%;padding:.95em 20% .95em 4%;font-size:16px}
 .categories>a:hover{background:var(--red);filter:none}
 .categories img{filter:none}
 .hero-copy>.ribbon{width:58%;padding:.85em 2.8em .85em 1em;font-size:clamp(12px,1.35vw,24px);white-space:nowrap}
-.about-copy>.ribbon{left:14%;width:27%;height:8.5%;padding:0 2.8em 0 1em;background-image:url('assets/ticket-button-red.svg');color:var(--gold);font-size:clamp(13px,1.45vw,26px);white-space:nowrap}
+.about-copy>.ribbon{left:14%;width:27%;height:8.5%;padding:0 2.8em 0 1em;background-image:url('assets/ticket-button-red.svg?v=5');color:var(--gold);font-size:clamp(13px,1.45vw,26px);white-space:nowrap}
 .offers{color:var(--gold)}
 .offers button{background-image:url('assets/ticket-card-red.svg')}
 .portfolio-section>.ribbon{width:38%;padding:.85em 2.8em .85em 1em;font-size:clamp(13px,1.4vw,25px);white-space:nowrap}
@@ -109,7 +109,7 @@ dialog .ribbon{width:100%;padding:.95em 20% .95em 4%;font-size:16px}
 @media(max-width:760px){.ticket-notches{display:none}}
 
 /* Compact ticket CTAs sized to their labels rather than stretched percentages. */
-.hero-copy>.ribbon{width:auto;max-width:100%;min-width:0;padding:.85em 3.2em .85em 1.1em;background-image:url('assets/ticket-button-red.svg');color:var(--gold)}
+.hero-copy>.ribbon{width:auto;max-width:100%;min-width:0;padding:.85em 3.2em .85em 1.1em;background-image:url('assets/ticket-button-red.svg?v=5');color:var(--gold)}
 .portfolio-section>.ribbon{width:auto;max-width:100%;min-width:0;padding:.85em 3.2em .85em 1.1em}
 .calc-action{gap:12px}
 .calc-action>.ribbon{width:auto;min-width:0;padding:.85em 3em .85em 1.1em}
@@ -143,3 +143,9 @@ dialog .ribbon,dialog #dialog-action{width:max-content;max-width:100%;min-width:
 .categories .category-symbols i{font-size:34px}
 .category-name{font-size:11px}
 }
+
+/* Approved compact ticket: preserve the 4.2:1 silhouette at every CTA size. */
+.ribbon{aspect-ratio:600/143;height:auto;min-height:0;flex-shrink:0;background-size:100% 100%}
+.ribbon .ticket-size{padding:0 3.4em 0 1.3em;height:0;line-height:1.15}
+.ribbon .ticket-label{inset:0 22% 0 3%}
+.about-copy>.ribbon{height:auto}

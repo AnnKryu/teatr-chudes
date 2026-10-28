@@ -11,7 +11,7 @@ function categoryFromURL(){const value=new URL(location.href).searchParams.get('
 function render(category,push=false){
  const c=CATALOG[category];if(!c)return;
  if(push){const u=new URL(location.href);u.searchParams.set('category',category);history.pushState({category},'',u)}
- stage.dataset.category=category;stage.querySelector('.catalog-scenery').src=`assets/catalog/${category}-stage.svg?v=20261029-4`;
+ stage.dataset.category=category;stage.querySelector('.catalog-scenery').src=`assets/catalog/${category}-stage.svg?v=20261029-5`;
  titles.textContent=c.title;subtitle.textContent=c.subtitle;document.title=`${c.title} — программы Театра чудес`;
  panel.setAttribute('aria-labelledby',`tab-${category}`);
  for(const t of tabs){const active=t.dataset.category===category;t.setAttribute('aria-selected',String(active));t.tabIndex=active?0:-1}

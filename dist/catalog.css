@@ -114,3 +114,6 @@
 .programs-page .navigation{left:50%;right:auto;translate:-50% 0;top:18px;display:grid;grid-template-columns:repeat(2,max-content);gap:2px 14px;font-size:10px;width:max-content;max-width:90%}
 .catalog-combo{aspect-ratio:auto}
 }
+
+.catalog-card .catalog-details{aspect-ratio:600/143;height:auto;min-height:0}
+.catalog-card .ticket-size{padding:0 3.4em 0 1.3em;height:0}
