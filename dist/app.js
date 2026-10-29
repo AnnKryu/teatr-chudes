@@ -17,5 +17,5 @@ document.querySelectorAll('.close-dialog').forEach(b=>b.addEventListener('click'
 document.querySelectorAll('dialog').forEach(d=>d.addEventListener('click',e=>{if(e.target===d){const r=d.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)d.close()}}));
 $('#dialog-action').addEventListener('click',()=>{info.close();$('#calculator').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});budget.focus({preventScroll:true})});
 
-// Programme categories and budget submission will link to their own pages later.
-$('#budget-form').addEventListener('submit',event=>event.preventDefault());
+// Carry the chosen date and guests into the holiday enquiry.
+$('#budget-form').addEventListener('submit',event=>{event.preventDefault();let draft={};try{draft=JSON.parse(sessionStorage.getItem('teatr.draft.v1')||'{}')}catch{};draft.date=$('#event-date').value;draft.age=$('#age').selectedOptions[0].textContent;draft.guests=$('#guests').value==='100+'?'101':$('#guests').value;draft.budget=budget.value;try{sessionStorage.setItem('teatr.draft.v1',JSON.stringify(draft))}catch{}location.href='programs.html'});
