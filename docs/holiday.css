@@ -42,3 +42,8 @@ body{padding-bottom:96px}[hidden]{display:none!important}
 body{padding-bottom:0}
 .flow-footer{padding-bottom:110px}
 @media(max-width:760px){.flow-footer{padding-bottom:100px}}
+
+/* Five category links, including the holiday combination builder. */
+.categories{grid-template-columns:repeat(5,minmax(0,1fr));gap:2%}
+.categories .category-name{font-size:clamp(11px,1.4vw,23px)}
+@media(max-width:900px){.categories{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.categories>a:last-child{grid-column:1/-1;width:calc(50% - 6px);justify-self:center}.categories .category-name{font-size:12px}}

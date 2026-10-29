@@ -123,3 +123,23 @@
 .catalog-photo img[src*="animation-photo-0.webp"]{object-position:50% 51%}
 .catalog-photo img[src*="animation-photo-3.webp"]{object-position:50% 58%}
 .catalog-photo img[src*="workshop-photo-6.webp"]{object-position:50% 50%}
+
+/* The fifth catalogue tab and an editable combination of existing programmes. */
+.catalog-tabs{grid-template-columns:repeat(5,minmax(0,1fr));margin-left:-4%;margin-right:-4%}
+.catalog-tabs button{font-size:clamp(10px,1.1vw,20px)}
+.catalog-tabs button img{width:17%}
+.combo-grid{display:block}
+.combo-builder{background:var(--wine);color:var(--gold);padding:4% 5%;border:2px solid var(--gold);border-radius:15px;text-align:center}
+.combo-builder-intro h2{font:600 clamp(32px,3.8vw,68px)/.95 var(--display);letter-spacing:-.04em;transform:scaleX(.94)}
+.combo-builder-intro p{font:13px/1.6 var(--body);max-width:540px;margin:15px auto 26px}
+.combo-picks{display:grid;grid-template-columns:1fr 1fr;gap:18px;text-align:left}
+.combo-pick{border:1px solid #efc07877;border-radius:7px;padding:17px;min-width:0}
+.combo-pick-heading{display:flex;align-items:center;gap:12px;text-transform:uppercase;font:700 13px var(--body);margin-bottom:14px}
+.combo-pick-heading img{width:28px;height:28px;object-fit:contain}
+.combo-pick select{display:block;width:100%;font:13px var(--body);background:var(--cream);color:var(--wine);border:1px solid var(--gold);border-radius:5px;min-height:46px;padding:10px 8px;min-width:0}
+.combo-count{font:13px/1.5 var(--body);margin:24px 0 8px}
+.combo-count.combo-error{color:var(--cream);font-weight:700}
+.combo-price-note{font:12px/1.6 var(--body);max-width:570px;margin:10px auto 18px}
+.combo-builder>.ribbon{font-size:clamp(13px,1.25vw,20px)}
+.combo-builder>.text-link{display:block;color:var(--gold);font-size:12px;margin-top:18px}
+@media(max-width:760px){.catalog-tabs{grid-template-columns:repeat(2,minmax(0,1fr));margin-left:0;margin-right:0}.catalog-tabs button{font-size:11px}.catalog-tabs button img{width:27px}.catalog-tabs button:last-child{grid-column:1/-1;justify-self:center;width:calc(50% - 4px)}.combo-builder{padding:25px 17px;border-radius:12px}.combo-builder-intro h2{font-size:40px}.combo-builder-intro p{font-size:11px;margin:14px auto 20px}.combo-picks{grid-template-columns:1fr;gap:12px}.combo-pick{padding:14px}.combo-pick-heading{font-size:12px}.combo-pick select{font-size:12px}.combo-price-note{font-size:10px}.combo-builder>.ribbon{font-size:13px}}
