@@ -5,5 +5,5 @@
 @media(max-width:370px){.costume-options strong{font-size:22px}.costume-options img{width:33px}.bubble-booking{flex-wrap:wrap}.bubble-booking .ribbon{font-size:11px}.bubble-moments h3{font-size:18px}}
 @media(prefers-reduced-motion:reduce){.gallery-thumbs button,.costume-options span{transition:none}}
 
-/* Give the travel ticket a little breathing room beside the price heading. */
-@media(min-width:761px){.travel-card{margin-top:28px}}
+/* Align the travel ticket with the bottom of the complete price list. */
+@media(min-width:761px){.travel-card{margin-top:0;align-self:end}}
