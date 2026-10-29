@@ -4,7 +4,7 @@
   "private": true,
   "description": "Новогодние поздравления, шоу и мастер-классы — предварительная главная страница",
   "scripts": {
-    "check": "node --check dist/app.js && node --check dist/programs.js && node --check dist/catalog-data.js && node --check dist/catalog.js && node --check dist/holiday-store.js && node --check dist/holiday.js && node --check dist/booking-config.js",
+    "check": "node --check dist/app.js && node --check dist/programs.js && node --check dist/catalog-data.js && node --check dist/catalog.js && node --check dist/holiday-store.js && node --check dist/holiday.js && node --check dist/booking-config.js && node --check dist/bubble-detail.js",
     "test": "node --test tests/holiday-store.test.cjs"
   }
 }
