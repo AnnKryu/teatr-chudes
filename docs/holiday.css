@@ -24,3 +24,6 @@ body{padding-bottom:96px}[hidden]{display:none!important}
 
 /* Keep faces in the compact selection thumbnails. */
 .selection-photo img[src*="animation-photo-2.webp"],.summary-row img[src*="animation-photo-2.webp"]{object-position:50% 26%}
+
+/* The booking form uses light fields; keep native date controls visible. */
+.form-grid input[type=date]{color-scheme:light}
