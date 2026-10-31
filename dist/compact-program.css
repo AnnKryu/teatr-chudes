@@ -45,3 +45,7 @@
 .compact-fixed-characters{font:13px/1.5 var(--body);text-align:center;margin:14px 0 5px;padding-top:12px;border-top:1px solid #c9935270}
 .compact-info .compact-program-note{font:10px/1.55 var(--body);margin-top:12px;opacity:.85}
 @media(max-width:760px){.compact-animation-copy h2{font-size:33px}.compact-animation-copy .compact-info{height:265px}#compact-program-dialog[data-program="santa-workshop"] .compact-animation-copy h2{font-size:28px}#compact-program-dialog:has(.compact-animation-copy) .compact-gallery{display:block;max-width:340px}#compact-program-dialog[data-program="new-year"] .compact-info{height:285px}}
+
+/* Workshop galleries and group pricing. */
+.compact-workshop-copy h2{font-size:44px}.compact-workshop-copy .compact-info{height:340px}.compact-workshop-copy .compact-meta{flex-wrap:wrap;gap:8px 18px}.compact-workshop-copy .compact-info dd{white-space:normal;text-align:right}.compact-workshop-copy .compact-program-note{margin:8px 0}
+@media(max-width:760px){.compact-workshop-copy h2{font-size:34px}.compact-workshop-copy .compact-info{height:280px}#compact-program-dialog:has(.compact-workshop-copy) .compact-gallery{display:block}.compact-workshop-copy .compact-info dl>div{font-size:12px}#compact-program-dialog:has(.compact-workshop-copy) .compact-thumbs{grid-template-columns:repeat(3,1fr);margin-top:8px;max-width:210px}#compact-program-dialog:has(.compact-workshop-copy) .compact-thumbs img{aspect-ratio:1.3}}
