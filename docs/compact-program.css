@@ -29,3 +29,11 @@
 .compact-package label{position:relative;cursor:pointer}.compact-package input{position:absolute;width:1px;height:1px;opacity:0}.compact-package span{display:block;text-align:center;border:1px solid var(--wine);border-radius:3px;padding:8px;font-size:11px}.compact-package b{display:block;margin-top:4px;font-weight:400;font-size:10px}.compact-package input:checked+span{background:var(--wine);color:var(--gold)}.compact-package input:focus-visible+span{outline:3px solid #c99352;outline-offset:3px}
 .compact-costume .costume-options[data-pair]{grid-template-columns:1fr 1.3fr}.compact-costume .costume-options[data-pair]>label>span{gap:7px;min-height:68px}.compact-costume .costume-options[data-pair] strong{font-size:21px;text-align:left}.compact-costume .costume-options .pair-symbol{padding:0;outline:0;border:0;background:none!important;min-height:0;clip-path:none;gap:0;display:flex;flex:none}.compact-costume .pair-symbol img{width:23px;height:38px}.compact-costume .costume-options[data-pair] i{width:14px;height:14px;font-size:10px}
 @media(max-width:760px){#compact-program-dialog[data-program="snow-whirl"] .compact-copy h2{font-size:33px}#compact-program-dialog[data-program="snow-whirl"] .compact-meta{font-size:10px!important;flex-wrap:wrap}#compact-program-dialog[data-program="snow-whirl"] .compact-info{height:240px}.compact-costume .costume-options[data-pair] strong{font-size:17px}.compact-costume .costume-options[data-pair]>label>span{padding:6px;gap:4px}.compact-costume .pair-symbol img{width:17px;height:32px}.compact-package span{font-size:10px}}
+
+/* Screen programmes share the compact window, without an unspecified costume choice. */
+.compact-thumbs:empty{display:none}
+.compact-quiz-copy h2{font-size:48px}
+.compact-quiz-copy .compact-info{height:330px}
+.compact-quiz-copy .compact-actions{margin-top:24px;padding-top:18px;border-top:1px dashed #c9935270}
+.compact-quiz-copy .compact-price-note{margin:20px 0;line-height:1.8}
+@media(max-width:760px){.compact-quiz-copy h2{font-size:35px}.compact-quiz-copy .compact-info{height:310px}#compact-program-dialog:has(.compact-quiz-copy) .compact-gallery{display:block;max-width:340px}.compact-quiz-copy .compact-meta{flex-wrap:wrap;gap:8px}}
