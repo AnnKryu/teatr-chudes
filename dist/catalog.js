@@ -7,8 +7,10 @@ const titles=document.querySelector('#catalog-title'),subtitle=document.querySel
 const allPrograms=Object.values(CATALOG).flatMap(c=>c.programs);
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function artist(n){return n===1?'артист':'артиста'}
-function categoryFromURL(){const value=new URL(location.href).searchParams.get('category');return Object.hasOwn(CATALOG,value)?value:'animation'}
+function categoryFromURL(){const value=new URL(location.href).searchParams.get('category');return Object.hasOwn(CATALOG,value)?value:window.FinderUI?.active()?'all':'animation'}
 function render(category,push=false){
+ if(window.FinderUI?.active()){window.FinderUI.render(category,push);return}
+ document.querySelector('#finder-controls')?.remove();grid.classList.remove('finder-grid');
  const c=CATALOG[category];if(!c)return;
  if(push){const u=new URL(location.href);u.searchParams.set('category',category);u.searchParams.delete('program');history.pushState({category},'',u)}
  stage.dataset.category=category;stage.querySelector('.catalog-scenery').src=`assets/catalog/${category==='combo'?'show':category}-stage.svg?v=20261029-6`;
