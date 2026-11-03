@@ -13,3 +13,5 @@
 
 /* Captions are accessible names only; previews keep the requested order. */
 .portfolio-compact .media-placeholder:nth-child(1) img{object-position:center 35%}.portfolio-compact .media-placeholder:nth-child(2) img{object-position:center 40%}.portfolio-compact .media-placeholder:nth-child(3) img{object-position:center}.moment-viewer-footer #moment-count{margin-left:auto}
+
+.portfolio-compact > .ribbon{margin-top:28px}
