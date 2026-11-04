@@ -1,0 +1,51 @@
+/* Phone layout only. Desktop declarations stay in their existing stylesheets. */
+@media (max-width:760px){
+  body{padding-bottom:88px;-webkit-text-size-adjust:100%}
+  html{scroll-padding-top:18px}
+  .hero .navigation,.programs-page .navigation,.flow-header .navigation{top:16px;left:16px;right:98px;translate:none;width:auto;max-width:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 8px;font-size:12px;line-height:1.3;text-align:center}
+  .navigation a,.navigation button{display:flex;align-items:center;justify-content:center;min-height:36px;padding:5px 0;white-space:normal}
+  .holiday-tools{top:20px;right:14px;gap:7px}.holiday-tools .icon-button{width:34px;height:34px;padding:8px}
+  .hero{height:690px;min-height:690px}.hero .scenery{object-fit:fill;width:160%;max-width:none;left:-30%}
+  .hero-copy{top:158px;left:18px;width:calc(100% - 36px)}
+  .hero h1{font-size:clamp(52px,14.5vw,68px);line-height:.87;letter-spacing:-.045em;width:100%;margin:0;transform:scaleX(.88)}
+  .hero-copy>p{font-size:12px;line-height:1.5;max-width:285px;margin:22px auto 16px}
+  .hero-copy>.ribbon{font-size:14px;width:245px;max-width:100%}
+  .hero .character{height:245px;width:195px;bottom:-2px}.hero .frost{left:-28px}.hero .maiden{right:-24px;width:185px}
+  .calculator-section{padding:30px 18px;border-radius:44px}.calculator-section h2{font-size:34px;line-height:1;margin:0 0 22px}
+  .ticket{padding:22px;gap:20px}.budget output{font-size:38px}.fields{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 10px}.fields label{font-size:13px;gap:7px}
+  #budget-form .fields input,#budget-form .fields select,.fields input,.fields select{font-size:16px;min-height:46px;border-radius:9px;padding:10px 8px}.fields select{padding-right:29px}.fields label:first-child{grid-column:auto}
+  .estimate-note{font-size:12px;line-height:1.6;margin:18px 0}.calc-action{gap:10px}.calc-action>.ribbon{font-size:16px;max-width:260px}
+  .categories{padding:24px 18px;gap:14px}.categories .category-name{font-size:13px;line-height:1.4}.categories .category-symbols{height:56px}
+  .about-section{min-height:635px}.about-copy{top:40px;left:7%;width:86%}.about-copy p{font-size:14px;line-height:1.5}.photo-arches{top:280px;left:10%;right:10%;height:285px}
+  .offers{margin:12px 18px 24px;gap:8px}.offers button{padding:18px 5px}.offers strong{font-size:30px}.offers span{font-size:12px;line-height:1.5}
+  .portfolio-compact{padding:32px 18px 100px;min-height:0}.portfolio-compact .portfolio-heading h2{font-size:43px;line-height:1;white-space:normal}.portfolio-compact .portfolio-heading p{font-size:13px;line-height:1.6;margin:16px auto 22px}
+  .portfolio-compact .portfolio-grid{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:auto;gap:12px}.portfolio-compact .portfolio-grid .media-placeholder{height:auto;aspect-ratio:4/5;grid-column:auto}.portfolio-compact .portfolio-grid .media-placeholder:last-child{grid-column:1/-1;aspect-ratio:16/9}.portfolio-compact>.ribbon{font-size:14px;margin-top:28px;max-width:100%}
+  .catalog-stage{padding-top:135px;padding-bottom:70px}.catalog-heading{width:calc(100% - 40px)}
+  .catalog-stage .catalog-heading h1{height:auto!important;min-height:0!important;font-size:44px!important;line-height:1.05;margin:0;white-space:normal!important;transform:none}
+  .catalog-stage .catalog-heading p{height:auto!important;min-height:0;font-size:12px!important;line-height:1.55;max-width:100%!important;margin:14px auto 0!important}
+  .catalog-stage[data-category=show] .catalog-heading h1,.catalog-stage[data-category=workshop] .catalog-heading h1,.catalog-stage[data-category=combo] .catalog-heading h1{font-size:36px!important}
+  .catalog-stage[data-category=quiz] .catalog-heading h1{font-size:34px!important}
+  .catalog-content{width:calc(100% - 32px);margin:24px auto 0}
+  .catalog-tabs{display:flex;gap:8px;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:none;padding-bottom:10px;margin:0 0 14px;scroll-snap-type:x proximity}
+  .catalog-tabs button,.catalog-tabs button:last-child{flex:0 0 auto;width:auto;min-width:105px;min-height:48px;padding:10px 14px;font-size:12px;border-radius:12px;gap:8px;scroll-snap-align:start}
+  .catalog-tabs::-webkit-scrollbar{display:none}
+  .catalog-tabs button img{width:22px;height:24px}.catalog-grid{grid-template-columns:minmax(0,1fr);gap:22px;max-width:400px;margin:auto}
+  .catalog-card h2{font-size:30px}.catalog-meta{font-size:12px}.catalog-card .catalog-details{font-size:14px}
+  .catalog-combo{aspect-ratio:auto;min-height:320px;padding:30px 18px 50px}.catalog-combo-copy{padding-top:0}.catalog-combo h2{font-size:43px;line-height:1}.catalog-combo p{font-size:13px;line-height:1.6}
+  .portfolio-navigation{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2px 12px;padding:14px 20px;font-size:13px}.portfolio-navigation a{display:flex;align-items:center;justify-content:center;min-height:36px}
+  .portfolio-page .portfolio-section{padding:30px 18px 75px}.portfolio-page .portfolio-heading h1{font-size:46px;line-height:1}.portfolio-page .portfolio-heading p{font-size:13px;line-height:1.6;margin-top:16px}
+  .portfolio-filters{gap:7px;margin:22px 0}.portfolio-filters button{font-size:13px;min-height:44px;padding:10px 14px}.portfolio-filters button span{font-size:10px;margin-left:4px}
+  .portfolio-page .moments-grid{gap:13px}.portfolio-page .moment-image{aspect-ratio:4/3}.portfolio-page .moment--elves-tree .moment-image,.portfolio-page .moment--team-selfie .moment-image{aspect-ratio:4/5}
+  .portfolio-page .moment--elves-tree .moment-image img{object-position:center 28%}.portfolio-footnote{line-height:1.7;font-size:12px}
+  #portfolio-viewer{width:calc(100vw - 20px);max-width:calc(100vw - 20px);max-height:92dvh;border-radius:12px}.moment-viewer-footer{padding:10px 14px}#moment-stage video{min-width:0;max-width:100%;width:100%}#moment-stage img,#moment-stage video{max-height:76dvh}
+  .holiday-dock{bottom:calc(10px + env(safe-area-inset-bottom,0px));max-width:calc(100% - 28px);min-height:48px;font-size:13px}
+  dialog .close-dialog{min-width:44px;min-height:44px}
+  dialog{max-width:calc(100vw - 24px);max-height:90dvh;overflow-y:auto}dialog input,dialog select,.flow-content input,.flow-content select,.flow-content textarea{font-size:16px}
+  #compact-program-dialog{width:calc(100vw - 20px);padding:40px 18px 22px}.compact-layout{grid-template-columns:minmax(0,1fr);gap:20px}.compact-copy h2{font-size:34px!important;line-height:1.05}.compact-meta{flex-wrap:wrap;font-size:13px!important;gap:8px 14px}.compact-tabs{gap:16px}.compact-tabs button{font-size:13px;min-height:44px}
+  .compact-copy .compact-info{height:auto!important;max-height:48dvh;overflow:auto}.compact-info p,.compact-info li{font-size:14px;line-height:1.6}.compact-info dl>div{font-size:12px}.compact-actions{flex-wrap:wrap;gap:10px}
+  .flow-page{padding-left:16px;padding-right:16px}.flow-header{padding-top:120px}.flow-content{padding-left:16px;padding-right:16px}
+}
+@media (max-width:360px){
+  .hero{height:665px;min-height:665px}.hero-copy{top:145px}.hero h1{font-size:43px;line-height:.94}.hero .character{height:225px;width:175px}.hero .maiden{width:170px}.hero-copy>p{font-size:11px}.hero-copy>.ribbon{width:228px;font-size:13px}
+  .navigation a,.navigation button{font-size:11px}.offers strong{font-size:26px}.offers span{font-size:11px}.portfolio-filters button{padding:10px 11px;font-size:12px}.portfolio-page .portfolio-heading h1{font-size:42px}
+}
