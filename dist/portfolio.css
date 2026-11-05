@@ -15,3 +15,10 @@
 .portfolio-compact .media-placeholder:nth-child(1) img{object-position:center 35%}.portfolio-compact .media-placeholder:nth-child(2) img{object-position:center 40%}.portfolio-compact .media-placeholder:nth-child(3) img{object-position:center}.moment-viewer-footer #moment-count{margin-left:auto}
 
 .portfolio-compact > .ribbon{margin-top:28px}
+
+/* The expanded gallery must not stretch the original stage artwork vertically. */
+@media(min-width:761px){
+ .portfolio-page .portfolio-section>.scenery{display:none}
+ .portfolio-page .portfolio-section{padding-bottom:calc(37.23% + 20px)}
+ .portfolio-page .portfolio-section:before{content:'';position:absolute;inset:0;pointer-events:none;z-index:-1;background:url('assets/mobile-portfolio-top.svg') top center/100% auto no-repeat,url('assets/mobile-portfolio-bottom.svg') bottom center/100% auto no-repeat}
+}
